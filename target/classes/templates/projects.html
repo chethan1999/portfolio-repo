@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="~{fragments/layout :: head('Chethan B S | Projects')}"></head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav th:replace="~{fragments/layout :: navbar(${activePage})}"></nav>
+
+<main class="flex-grow-1 page-content">
+
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-header-title">Projects &amp; Achievements</h1>
+            <p class="page-header-subtitle">Enterprise solutions and integration work I've delivered</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Filter Buttons -->
+            <div class="text-center mb-5">
+                <div class="btn-group filter-group" role="group">
+                    <button type="button" class="btn btn-filter active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-filter" data-filter="integration">Integration</button>
+                    <button type="button" class="btn btn-filter" data-filter="openbanking">OpenBanking</button>
+                    <button type="button" class="btn btn-filter" data-filter="api">API Management</button>
+                    <button type="button" class="btn btn-filter" data-filter="devops">DevOps</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="openbanking">
+                    <div class="project-card-full h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon-lg"><i class="bi bi-bank2"></i></div>
+                        </div>
+                        <h5 class="mt-3">OpenBanking Regulatory Compliance Platform</h5>
+                        <p class="text-muted small flex-grow-1">
+                            Worked with major international banks to align their platforms with local
+                            OpenBanking regulatory requirements. Built integration solutions using WSO2
+                            products to connect core banking systems, and currently driving obligation
+                            changes to meet evolving regulatory standards.
+                        </p>
+                        <div class="mt-auto pt-3">
+                            <span class="badge tech-badge me-1">WSO2 APIM</span>
+                            <span class="badge tech-badge me-1">OpenBanking</span>
+                            <span class="badge tech-badge me-1">Java</span>
+                            <span class="badge tech-badge">OAuth2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="integration">
+                    <div class="project-card-full h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon-lg"><i class="bi bi-diagram-3-fill"></i></div>
+                        </div>
+                        <h5 class="mt-3">Supply Chain Integration Solution</h5>
+                        <p class="text-muted small flex-grow-1">
+                            Designed and developed an end-to-end integration solution connecting
+                            OMS, WMS, Tax, Coupon, Gift Cards, and other systems required for
+                            complete Supply Chain Management, deployed on Docker and Kubernetes with AWS services.
+                        </p>
+                        <div class="mt-auto pt-3">
+                            <span class="badge tech-badge me-1">WSO2 MI</span>
+                            <span class="badge tech-badge me-1">Docker</span>
+                            <span class="badge tech-badge me-1">Kubernetes</span>
+                            <span class="badge tech-badge">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="integration">
+                    <div class="project-card-full h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon-lg"><i class="bi bi-plug-fill"></i></div>
+                        </div>
+                        <h5 class="mt-3">Custom WSO2 Connector Development</h5>
+                        <p class="text-muted small flex-grow-1">
+                            Developed various custom connectors to extend WSO2's integration capabilities,
+                            enabling connections to different types of endpoints including REST, SOAP,
+                            and GraphQL, significantly broadening integration reach for enterprise clients.
+                        </p>
+                        <div class="mt-auto pt-3">
+                            <span class="badge tech-badge me-1">WSO2 EI</span>
+                            <span class="badge tech-badge me-1">REST</span>
+                            <span class="badge tech-badge me-1">SOAP</span>
+                            <span class="badge tech-badge">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="api">
+                    <div class="project-card-full h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon-lg"><i class="bi bi-cloud-arrow-up-fill"></i></div>
+                        </div>
+                        <h5 class="mt-3">API Management with SoftwareAG</h5>
+                        <p class="text-muted small flex-grow-1">
+                            At PwC, performed API development and management using SoftwareAG, evaluating
+                            middleware technology stacks for clients. Documented and published APIs to the
+                            developer portal, and mentored team members on WSO2 tools.
+                        </p>
+                        <div class="mt-auto pt-3">
+                            <span class="badge tech-badge me-1">SoftwareAG</span>
+                            <span class="badge tech-badge me-1">Spring Boot</span>
+                            <span class="badge tech-badge">REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="devops">
+                    <div class="project-card-full h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon-lg"><i class="bi bi-hdd-stack-fill"></i></div>
+                        </div>
+                        <h5 class="mt-3">Containerised Integration Deployments</h5>
+                        <p class="text-muted small flex-grow-1">
+                            Deployed WSO2 integration solutions in containerised environments using
+                            Docker and Kubernetes, leveraging AWS services (Lambda, SQS, S3, EC2, Cloud9)
+                            to build scalable and resilient production-grade pipelines.
+                        </p>
+                        <div class="mt-auto pt-3">
+                            <span class="badge tech-badge me-1">Docker</span>
+                            <span class="badge tech-badge me-1">Kubernetes</span>
+                            <span class="badge tech-badge me-1">AWS Lambda</span>
+                            <span class="badge tech-badge">AWS SQS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="api">
+                    <div class="project-card-full h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon-lg"><i class="bi bi-bar-chart-line-fill"></i></div>
+                        </div>
+                        <h5 class="mt-3">Transaction Data Visualisation (Kibana)</h5>
+                        <p class="text-muted small flex-grow-1">
+                            Built transaction data visualisation pipelines and Kibana dashboards to provide
+                            real-time insight into integration flows, API traffic, and system health —
+                            enabling proactive monitoring and faster root-cause analysis.
+                        </p>
+                        <div class="mt-auto pt-3">
+                            <span class="badge tech-badge me-1">Kibana</span>
+                            <span class="badge tech-badge me-1">Elasticsearch</span>
+                            <span class="badge tech-badge">WSO2</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Achievements Section -->
+            <div class="mt-5 pt-4">
+                <h2 class="section-title text-center mb-5">Key Achievements</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="achievement-card">
+                            <i class="bi bi-trophy-fill text-primary me-3"></i>
+                            Developed high-quality integration solutions adopted by enterprise clients across industries.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="achievement-card">
+                            <i class="bi bi-trophy-fill text-primary me-3"></i>
+                            Exposed APIs through AWS API Gateway and other API Management tools at scale.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="achievement-card">
+                            <i class="bi bi-trophy-fill text-primary me-3"></i>
+                            Deployed integration solutions in containerised (Docker / Kubernetes) environments.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="achievement-card">
+                            <i class="bi bi-trophy-fill text-primary me-3"></i>
+                            Developed custom connectors for REST, SOAP, and GraphQL endpoints in WSO2.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="achievement-card">
+                            <i class="bi bi-trophy-fill text-primary me-3"></i>
+                            Visualised transaction data in Kibana dashboards for real-time monitoring.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="achievement-card">
+                            <i class="bi bi-trophy-fill text-primary me-3"></i>
+                            Led OpenBanking regulatory alignment for international banking clients.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

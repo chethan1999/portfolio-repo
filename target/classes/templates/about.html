@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="~{fragments/layout :: head('Chethan B S | About')}"></head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav th:replace="~{fragments/layout :: navbar(${activePage})}"></nav>
+
+<main class="flex-grow-1 page-content">
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-header-title">About Me</h1>
+            <p class="page-header-subtitle">A little about who I am and what drives me</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-4 text-center">
+                    <div class="about-avatar mx-auto">
+                        <img src="https://miro.medium.com/v2/resize:fill:400:400/1*kY6CBeMr54gWKSlRtzSJwA.jpeg"
+                             alt="Chethan B S">
+                    </div>
+                    <h3 class="mt-3 mb-1">Chethan B S</h3>
+                    <p class="text-muted">Senior Software Engineer @ WSO2</p>
+                    <div class="mt-3">
+                        <a href="mailto:chethanchethu1159@gmail.com" class="btn btn-sm btn-primary me-2">
+                            <i class="bi bi-envelope me-1"></i>Email Me
+                        </a>
+                        <a href="https://linkedin.com/in/chethan-b-s-769920175" target="_blank" class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-linkedin me-1"></i>LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 class="section-title mb-4">Who I Am</h2>
+                    <p class="lead">
+                        WSO2 developer with 4+ years of experience in designing, developing, and deploying
+                        enterprise-level software solutions and API Management.
+                    </p>
+                    <p class="text-muted">
+                        Currently working at WSO2, I provide L1/L2/L3 technical support for WSO2 products
+                        including API Manager, Enterprise Integrator, Open Banking, and Micro Integrator.
+                        I work with major international banks on OpenBanking regulatory compliance —
+                        building integration solutions to connect core banking systems and driving
+                        obligation changes to meet evolving regulatory requirements.
+                    </p>
+                    <p class="text-muted">
+                        When I'm not solving production issues or architecting integration pipelines,
+                        you'll find me exploring new middleware technologies, writing on
+                        <a href="https://medium.com/@chethanbs21" target="_blank">Medium</a>,
+                        or tinkering with cloud-native deployments.
+                    </p>
+
+                    <div class="row mt-4 g-3">
+                        <div class="col-sm-6">
+                            <div class="info-item">
+                                <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                                <span>Bengaluru, India</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-item">
+                                <i class="bi bi-briefcase-fill text-primary me-2"></i>
+                                <span>Senior Software Engineer</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-item">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <span>WSO2</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-item">
+                                <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+                                <span>B.E. in Computer Science, CMR Institute of Technology</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-item">
+                                <i class="bi bi-telephone-fill text-primary me-2"></i>
+                                <span>+91 82174 36994</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-item">
+                                <i class="bi bi-medium text-primary me-2"></i>
+                                <a href="https://medium.com/@chethanbs21" target="_blank" class="contact-link">medium.com/@chethanbs21</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline / Experience -->
+    <section class="py-5 bg-dark-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Experience &amp; Education</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">05/2024 – Present &nbsp;&middot;&nbsp; Bengaluru, Karnataka</span>
+                        <h5>Senior Software Engineer</h5>
+                        <p class="text-primary mb-2">WSO2</p>
+                        <ul class="text-muted small ps-3">
+                            <li>Provide L1/L2/L3 technical support for WSO2 API Manager, Enterprise Integrator, Open Banking, and Micro Integrator.</li>
+                            <li>Diagnose and resolve complex production issues related to APIs, authentication flows, integration pipelines, and deployment configurations.</li>
+                            <li>Work with major international banks on OpenBanking regulatory compliance — building integration solutions to connect their core banking systems through WSO2 products.</li>
+                            <li>Driving obligation changes to align banking platforms with evolving local regulatory requirements.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">07/2023 – 05/2024 &nbsp;&middot;&nbsp; Mumbai, Maharashtra</span>
+                        <h5>Associate</h5>
+                        <p class="text-primary mb-2">PwC</p>
+                        <ul class="text-muted small ps-3">
+                            <li>Conducted POCs on middleware technologies to identify the best stack for enterprise clients.</li>
+                            <li>Worked as a backend developer using the Java Spring Boot framework.</li>
+                            <li>Mentored new joiners on WSO2 tools and integration patterns.</li>
+                            <li>Performed API Development and Management with SoftwareAG.</li>
+                            <li>Documented APIs and published them to the developer portal.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">08/2021 – 06/2023 &nbsp;&middot;&nbsp; Bengaluru, Karnataka</span>
+                        <h5>Software Consultant</h5>
+                        <p class="text-primary mb-2">Pivotree</p>
+                        <ul class="text-muted small ps-3">
+                            <li>Skilled in WSO2 Enterprise Integrator, WSO2 Micro Integrator, WSO2 API Manager, Docker, Kubernetes, and AWS API Manager.</li>
+                            <li>Hands-on experience with AWS services: Lambda, SQS, S3, EC2, and Cloud9.</li>
+                            <li>Developed an Integration Solution for Supply Chain Management, connecting OMS, WMS, Tax, Coupon, Gift Cards, and other systems end-to-end.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">01/2021 – 08/2021 &nbsp;&middot;&nbsp; Bengaluru, Karnataka</span>
+                        <h5>Intern</h5>
+                        <p class="text-primary mb-2">Pivotree</p>
+                        <ul class="text-muted small ps-3">
+                            <li>Worked on a WMS (Warehouse Management System) product in the Supply Chain domain.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">06/2017 – 07/2021</span>
+                        <h5>Bachelor of Engineering, Computer Science</h5>
+                        <p class="text-primary mb-2">CMR Institute of Technology, Bengaluru</p>
+                        <p class="text-muted small">Graduated with a strong foundation in algorithms, data structures, operating systems, and software engineering.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">What I Love</h2>
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-4">
+                    <div class="interest-card">
+                        <i class="bi bi-arrow-left-right interest-icon"></i>
+                        <p>Middleware &amp; Integration</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="interest-card">
+                        <i class="bi bi-cloud-fill interest-icon"></i>
+                        <p>AWS &amp; Cloud DevOps</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="interest-card">
+                        <i class="bi bi-cpu-fill interest-icon"></i>
+                        <p>Micro-Services</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="interest-card">
+                        <i class="bi bi-bootstrap-fill interest-icon"></i>
+                        <p>Spring Boot</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="interest-card">
+                        <i class="bi bi-bank2 interest-icon"></i>
+                        <p>OpenBanking</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="interest-card">
+                        <i class="bi bi-gear-wide-connected interest-icon"></i>
+                        <p>DevOps</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="interest-card">
+                        <i class="bi bi-shield-lock-fill interest-icon"></i>
+                        <p>API Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

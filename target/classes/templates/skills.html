@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="~{fragments/layout :: head('Chethan B S | Skills')}"></head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav th:replace="~{fragments/layout :: navbar(${activePage})}"></nav>
+
+<main class="flex-grow-1 page-content">
+
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-header-title">Skills</h1>
+            <p class="page-header-subtitle">Technologies and tools I work with</p>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Technical Skills</h2>
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name"><i class="bi bi-shield-lock-fill me-2 text-primary"></i>WSO2 API Manager</span>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar" role="progressbar" data-width="92"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name"><i class="bi bi-arrow-left-right me-2 text-success"></i>WSO2 Enterprise / Micro Integrator</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar" role="progressbar" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name"><i class="bi bi-filetype-java me-2 text-warning"></i>Java</span>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar" role="progressbar" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name"><i class="bi bi-bootstrap-fill me-2 text-info"></i>Spring Boot</span>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar" role="progressbar" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name"><i class="bi bi-braces me-2 text-danger"></i>REST, SOAP, XML, JSON, XSLT</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar" role="progressbar" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name"><i class="bi bi-box-seam me-2 text-primary"></i>Docker &amp; Kubernetes</span>
+                            <span class="skill-pct">78%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar" role="progressbar" data-width="78"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name"><i class="bi bi-cloud-fill me-2 text-success"></i>AWS Cloud</span>
+                            <span class="skill-pct">75%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar" role="progressbar" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name"><i class="bi bi-diagram-3 me-2 text-warning"></i>GraphQL</span>
+                            <span class="skill-pct">65%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar" role="progressbar" data-width="65"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Platforms -->
+    <section class="py-5 bg-dark-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Tools &amp; Platforms</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-shield-lock-fill tool-icon"></i>
+                        <p>WSO2 APIM</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-arrow-left-right tool-icon"></i>
+                        <p>WSO2 EI / MI</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-bank2 tool-icon"></i>
+                        <p>OpenBanking</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-box-seam tool-icon"></i>
+                        <p>Docker</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-hdd-stack-fill tool-icon"></i>
+                        <p>Kubernetes</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-cloud-fill tool-icon"></i>
+                        <p>AWS Cloud</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-bar-chart-fill tool-icon"></i>
+                        <p>Kibana</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-plug-fill tool-icon"></i>
+                        <p>SoftwareAG</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-git tool-icon"></i>
+                        <p>Git</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="tool-card text-center">
+                        <i class="bi bi-window-stack tool-icon"></i>
+                        <p>Postman</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills / Focus -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h2 class="section-title mb-4">Soft Skills</h2>
+                    <ul class="soft-skill-list">
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>L1/L2/L3 Technical Support &amp; Troubleshooting</li>
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Middleware Technology Evaluation &amp; POC</li>
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Mentoring &amp; Onboarding New Engineers</li>
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>API Documentation &amp; Developer Portals</li>
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Regulatory Compliance &amp; OpenBanking Standards</li>
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Cross-functional Client Collaboration</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section-title mb-4">Areas of Focus</h2>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="focus-card">
+                                <i class="bi bi-arrow-left-right text-primary fs-4 mb-2"></i>
+                                <p class="mb-0 small">Middleware &amp; Integration</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="focus-card">
+                                <i class="bi bi-bank2 text-primary fs-4 mb-2"></i>
+                                <p class="mb-0 small">OpenBanking &amp; Regulatory</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="focus-card">
+                                <i class="bi bi-cloud-fill text-primary fs-4 mb-2"></i>
+                                <p class="mb-0 small">Cloud &amp; DevOps</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="focus-card">
+                                <i class="bi bi-shield-lock-fill text-primary fs-4 mb-2"></i>
+                                <p class="mb-0 small">API Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>
